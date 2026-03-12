@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Letter</title>
+
+<style>
+
+body{
+background:#f7efe5;
+font-family:"Comic Sans MS";
+font-size:14px;
+text-align:center;
+overflow:hidden;
+}
+
+/* sparkles */
+
+.sparkle{
+position:fixed;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:0;}
+50%{opacity:1;}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+
+/* envelope */
+
+#envelopeContainer{
+margin-top:120px;
+cursor:pointer;
+}
+
+.envelope{
+width:240px;
+height:150px;
+background:#e6d3b3;
+margin:auto;
+position:relative;
+border:2px solid #c2a77d;
+}
+
+.flap{
+width:0;
+height:0;
+border-left:120px solid transparent;
+border-right:120px solid transparent;
+border-bottom:80px solid #d4b483;
+position:absolute;
+top:-80px;
+left:0;
+transform-origin:top;
+transition:1s;
+}
+
+/* buttons */
+
+button{
+padding:10px 20px;
+font-size:16px;
+margin:10px;
+cursor:pointer;
+}
+
+/* letter */
+
+#letter{
+display:none;
+width:650px;
+max-width:90%;
+height:420px;
+margin:auto;
+background:#fffdf7;
+padding:30px;
+border:1px solid #d4c4a8;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+overflow-y:auto;
+animation:slideUp 1.5s;
+line-height:1.6;
+text-align:left;
+}
+
+@keyframes slideUp{
+from{transform:translateY(200px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+/* scrollbar */
+
+#letter::-webkit-scrollbar{
+width:8px;
+}
+
+#letter::-webkit-scrollbar-track{
+background:#f3e6d0;
+}
+
+#letter::-webkit-scrollbar-thumb{
+background:#c2a77d;
+border-radius:10px;
+}
+
+/* confetti */
+
+.confetti{
+position:fixed;
+width:8px;
+height:8px;
+top:-10px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(100vh) rotate(720deg);
+opacity:0;
+}
+}
+
+/* secret message */
+
+#secret{
+display:none;
+text-align:center;
+margin-top:20px;
+font-weight:bold;
+color:#7a4f2c;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bgm" loop>
+<source src="suzume.mp3" type="audio/mp3">
+</audio>
+
+<div id="start">
+
+<div id="envelopeContainer">
+<div class="envelope">
+<div class="flap" id="flap"></div>
+</div>
+</div>
+
+<h2>Happy Birthday 🎉</h2>
+<p>Do you want to open the letter?</p>
+
+<button onclick="openLetter()">Yes</button>
+<button id="noBtn">No</button>
+
+</div>
+
+
+<div id="letter">
+
+
+Subject: A little note for you, Sir… <br><br>
+
+Dear Sir… or should I say ,student 😉,<br><br>
+
+<b>Happy Birthday to one of the most amazing (and mostly funny) person I know! 🎉</b><br><br>
+
+God really took His time when He made you — He added kindness, a big heart, and just the right amount of comedy to make everyone around you laugh. Honestly, the world would be a much quieter and more boring place without your jokes and talks.<br><br>
+
+May God bless you with more happiness, more laughter, and many beautiful moments in the year ahead. May He guide you, protect you, and fill your life with good friends, great adventures, and endless reasons to smile.<br><br>
+
+Never lose that special gift you have — the ability to make people laugh even on their worst days. It’s rare, and it makes you truly special.<br><br>
+
+Stay the same wonderful, funny, and the best sir and student... The world needs more people like you.<br><br>
+
+<b>"ULLAS" Happy Birthday, my friend! 🎂✨</b><br><br><br>
+
+
+It feels funny writing a letter to someone I mostly talk to through a screen, yet somehow you’ve been such a real and constant part of my life. We may not talk face to face much, but our chats have meant more to me than you probably know.<br><br>
+
+Looking back at this last year, I realize how many moments we shared through messages — laughs, encouragement, random talks, and conversations that somehow made even ordinary days feel special.<br><br>
+
+First of all, thank you. Thank you for all the encouragement, patience, and positivity you’ve given me throughout this year.<br><br>
+
+Thank you for always being there to listen, to motivate, and to make things lighter with your words. In just one year, we managed to create memories that feel much bigger than time.<br><br>
+
+And thank you for something very special — you always made me smile, especially when I was being too serious.<br><br>
+  
+No matter my mood, you somehow made an effort to make me smile every time we talked. There were days when I was clearly in a bad mood, and suddenly, without even trying too hard, you made me happy again.<br><br>
+
+And of course, I’ll never forget how you always told me to remember the way you dance whenever I feel sad. Honestly, that alone is enough to make me laugh 😄.<br><br>
+
+And a very special thank you for remembering my birthday and being the first person to wish me — right at 12:07.<br><br>
+
+ That moment honestly made my day (and my heart). It meant a lot to me that you remembered and cared enough to be there so early.<br>
+
+I also want to say I’m really, truly sorry that I couldn’t do the same for you. I wasn’t the first… I was actually the **very last** one to wish you. I feel bad about that, and I hope you can forgive me. Please know it was never because I forgot — just bad timing and worse luck. I truly am sorry.<br><br>
+
+Thank you so much for the T-shirt you all chose for me. I genuinely loved it.it was thoughtful, and it made me smile every time I wore it<br><br>
+
+Some of my favorite memories from this year are from our chats — the random laughs and long conversations., and of course the funny tradition where we called each other **“Mam” and “Sir”**, and whenever something serious came up, one of us suddenly became the *student*. Those little jokes somehow made everything lighter.<br><br>
+
+Also, this is your gentle reminder (from your concerned “Mam” 😄): please don’t overstrain yourself. It’s good that you rest sometimes, and you really should. Staying awake every night for too long isn’t good for you — you’ll start looking old very quickly! 😂 Take care of yourself properly, okay?.<br><br>
+
+And about that secret work you do in the middle of the night… I’m still waiting to know the answer.One day, I *will* find out. Until then, the mystery continues.<br><br>
+
+Before I end this, thank you for everything, truly. And even though it’s already over, I still want to wish you a Happy New Year as you have completed 18 years of your life. May this year bring you good health, peace, success, and maybe a little more sleep too.<br><br>
+
+More than anything, I’m grateful for our friendship — unusual, unexpected, and wonderfully weird.<br><br>
+
+“Some friendships don’t need daily meetings or loud moments — they survive on late-night texts, shared jokes, silly dances, and a quiet understanding that feels like home.”<br><br>
+
+With lots of gratitude, smiles, and friendship,<br>
+— Shekinah Glory. S
+
+<div id="secret">
+✨ If you reached the end… you officially unlocked the **full friendship letter**.  
+Thank you for reading every word. 😊
+</div>
+
+</div>
+
+
+<script>
+
+/* sparkle generator */
+
+setInterval(()=>{
+let s=document.createElement("div")
+s.className="sparkle"
+s.style.left=Math.random()*100+"vw"
+s.style.animationDuration=(Math.random()*3+4)+"s"
+document.body.appendChild(s)
+setTimeout(()=>s.remove(),7000)
+},400)
+
+/* no button escape */
+
+const noBtn=document.getElementById("noBtn")
+
+noBtn.addEventListener("mouseover",function(){
+
+let x=Math.random()*window.innerWidth
+let y=Math.random()*window.innerHeight
+
+noBtn.style.position="absolute"
+noBtn.style.left=x+"px"
+noBtn.style.top=y+"px"
+
+})
+
+/* open letter */
+
+function openLetter(){
+
+document.getElementById("flap").style.transform="rotateX(180deg)"
+
+setTimeout(()=>{
+document.getElementById("start").style.display="none"
+document.getElementById("letter").style.display="block"
+document.getElementById("bgm").play()
+confetti()
+},800)
+
+}
+
+/* confetti */
+
+function confetti(){
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div")
+c.classList.add("confetti")
+
+c.style.left=Math.random()*100+"vw"
+c.style.backgroundColor="hsl("+Math.random()*360+"deg,70%,60%)"
+c.style.animationDuration=(Math.random()*3+2)+"s"
+
+document.body.appendChild(c)
+
+}
+
+}
+
+/* reveal secret message */
+
+const letter=document.getElementById("letter")
+
+letter.addEventListener("scroll",function(){
+
+if(letter.scrollTop + letter.clientHeight >= letter.scrollHeight){
+document.getElementById("secret").style.display="block"
+}
+
+})
+
+</script>
+
+</body>
+</html>
